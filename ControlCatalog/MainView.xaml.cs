@@ -29,7 +29,16 @@ namespace ControlCatalog
                     Header = "Screens",
                     Content = new ScreenPage()
                 });
-
+                tabItems.Add(new TabItem()
+                {
+                    Header = "3rd Party Controls",
+                    IsHitTestVisible = false
+                });
+                tabItems.Add(new TabItem()
+                {
+                    Header = "Browser",
+                    Content = new BrowserPage()
+                });
             }
 
             var light = new StyleInclude(new Uri("resm:Styles?assembly=ControlCatalog"))
